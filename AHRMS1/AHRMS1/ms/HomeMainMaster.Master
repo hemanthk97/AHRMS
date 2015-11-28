@@ -1,0 +1,258 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeMainMaster.Master.cs" Inherits="AHRMS1.Site1" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>AHRMS</title>
+
+            
+		
+        <meta name="description" content="Circle Hover Effects with CSS Transitions" />
+        <meta name="keywords" content="circle, border-radius, hover, css3, transition, image, thumbnail, effect, 3d" />
+        <meta name="author" content="Codrops" />
+        <link rel="stylesheet" type="text/css" href="../NewFolder1/demo.css" />
+		<link rel="stylesheet" type="text/css" href="../NewFolder1/common.css" />
+        <link rel="stylesheet" type="text/css" href="../NewFolder1/style123.css" />
+        <link href="../NewFolder1/style123.css" rel="stylesheet" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+		<!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+
+    <link href="../Content/responsedesgin.css" rel="stylesheet" />
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'/>
+       <link href="../Content/fontssss.css" rel="stylesheet" />
+    <link href="../Content/specuspag.css" rel="stylesheet" />
+    <link href="../Content/logout.css" rel="stylesheet" />
+    <link href="../Content/footerstick.css" rel="stylesheet" />
+
+    <link href="../Content/Mainformcss.css" rel="stylesheet" />
+    
+    
+
+    <script src="/Scripts/_references.js"></script>
+    <script src="/Scripts/jquery-1.9.1.js"></script>
+    <script src="/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="/Scripts/jquery-ui-1.8.20.js"></script>
+    <script src="/Scripts/jquery-ui-1.8.20.min.js"></script>
+    <script src="/Scripts/modernizr-2.5.3.js"></script>
+    <script src="/Scripts/npm.js"></script>
+    <script src="/Scripts/bootstrap.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+
+
+    <script src="/Scripts/advancetitle.js"></script>
+    <script src="../Scripts/bpopup.js"></script>
+   
+</head>
+<body >
+    <style type="text/css">
+                   .modalBackground
+    {
+        background-color: Black;
+        filter: alpha(opacity=90);
+        opacity: 0.8;
+    }
+    </style>
+    <script>
+        $(function () {
+            setTimeout(hel1,2000)
+            function hel1() {
+                var string = "Welcome to";
+                var q = jQuery.map(string.split(''), function (letter) {
+                    return $('<span>' + letter + '</span>');
+                });
+
+                var dest = $('#wel');
+
+                var c = 0;
+                var i = setInterval(function () {
+                    q[c].appendTo(dest).hide().fadeIn(500);
+                    c += 1;
+                    if (c >= q.length) clearInterval(i);
+                }, 200);
+
+            }
+        });
+        $(function () {
+
+            setTimeout(hel, 4150)
+
+
+                function hel()
+                {
+                    var string = "AHRMS";
+                    var q = jQuery.map(string.split(''), function (letter) {
+                        return $('<span>' + letter + '</span>');
+                    });
+
+                    var dest = $('#ahm');
+
+                    var c = 0;
+                    var i = setInterval(function () {
+                        q[c].appendTo(dest).hide().fadeIn(500);
+                        c += 1;
+                        if (c >= q.length) clearInterval(i);
+                    }, 200);
+                }
+                setTimeout(wait, 3000)
+                function wait() {
+                    $('#ahm')
+                }
+
+        });
+
+        </script>
+    <div>
+    <div id="header">
+        <span style="position:fixed" class="hvr-buzz-out">
+            <input type="image" alt="AHRMS" src="../Images/logo.png" style="height:50px ;width:90px" /></span>
+            </div>
+     <div id="sidebar" style="position:absolute; z-index:2; padding:0 0 0 0; outline-offset:0;  margin-top:10%">
+       <p class="aa" id="at">A</p>
+        <p class="aa" id="ht">H</p>
+        <p class="aa" id="rt">R</p>
+        <p class="aa" id="mt">M</p>
+        <p class="aa" id="st">S</p>
+       </div>
+  <div class="hompageheader">
+    <div class="overlayvedio">&nbsp;</div>
+        <video id="vid" autoplay="autoplay"  width="100%" height="10%" poster="//d585tldpucybw.cloudfront.net/sfimages/default-source/labs/vid-home-2.jpg" loop="loop">
+            <source type="video/mp4" src="../Images/tlrk_home230720141733.mp4"/>
+            <source type="video/webm" src="../Images/tlrk_home230720141733.webm"/>
+            <span data-sfref="[images|OpenAccessDataProvider]9555a2ae-822d-4802-9db4-76ee82104faa" class="sfImageWrapper">
+                <img width="100%" height="auto" src="../Images/Mainimage.png" displaymode="Original"/></span>
+
+
+        </video>
+      <div class="headrer-gp"> 
+          <h1 id="wel" style="color:white"></h1>
+          <h2 id="ahm"  style="color:white" ></h2>
+      </div>
+        </div>
+    <div style=" width: 100%; height: 70px; margin: 0 0 0 0; padding: 0 0 0 0;top:0;bottom:0; background-color:#635c5c;">
+        <ul id="menu" style="display:inline;padding-top:10px;list-style:none; float:left">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            </ul>
+
+      <div class="wrapper" style="display:inline;">
+         
+  <ul id="mentop" style="list-style:none;text-decoration:none;padding-top:1%">
+      <li class="padd"  style="display:inline;font-size:1em;padding-right:4%;list-style:none;text-decoration:none">
+          <a class="hmenu" href="../usae/userlogreg.aspx">User</a>
+      </li>
+    <li  class="padd" style="display:inline;padding-right:4%;text-decoration:none;list-style:none">
+        <a class="hmenu" href="../hrae/hrlogreg.aspx">Employer</a>
+        </li>
+    
+    <li  class="padd" style="display:inline;text-decoration:none;list-style:none"><a class="hmenu" href="../usae/userlogreg.aspx">About US</a></li>
+    
+  </ul>
+
+ 
+</div>
+        </div>
+      
+    <br />
+    <br />
+
+    <h1 id="why">Why choose AHRMS?</h1>
+    <br />
+    <br />
+   
+
+    <div id="11" class="container" >
+        <div class="row">
+            <div class="col-lg-4" style="float:right;">
+    <div class="ProductBox hvr-back-pulse">
+                    <h3 class="hvr-back-pulse" style="margin-top:0%;">Responsive Web Design</h3>
+                    <div id="device">
+  <span></span>
+</div>               
+                  </div>
+                </div>
+                <div  class="col-lg-4" style="float:right;">
+                        <div class="ProductBox hvr-back-pulse" style="height:320px">
+                    <h3 class="hvr-back-pulse" style="margin-top:0%;">Crafted with QR code</h3>
+                    <img alt="no image" src="../Images/1427391265_qr_code.png" style="margin-top:15%" height="180" />                
+                  </div>
+                    <div class="col-lg-3" style="display:none"></div>
+                </div>
+           </div>
+        
+            </div>
+        
+    <div id="12" class="container">
+    <div class="row">
+        <div  class="col-lg-4" style="float:right;">
+    <div class="ProductBox hvr-back-pulse" >
+                    <h3 class="hvr-back-pulse" style="margin-top:0%;float:right">Eco Friendly System</h3>
+                    <img alt="no image" src="../Images/1427391182_Forrst_Social-Network-Communicate-Page-Curl-Effect-Circle-Glossy-Shadow-Shine.png" />                
+                  </div>
+                </div>
+                <div  class="col-lg-4" style="float:right;">
+                        <div class="ProductBox hvr-back-pulse">
+                    <h3 class="hvr-back-pulse" style="margin-top:0%;">Genuine candidature</h3>
+                    <img alt="no image" src="../Images/1427395907_Search-Male-User.png" />                
+                  </div>
+                </div>
+        <div  class="col-lg-3"></div>
+      </div>      
+ </div>     
+  
+     <div style="background-color:#999999;">
+         <p id="what" style="color:white;font-size:2em;text-align:center;padding-top:5px">Featured  Service<span style="color:purple">s</span></p>
+         <div style="margin-left:48%;bottom:-180px">
+         <asp:Image ID="Image1" ImageUrl="~/Images/1428072327_down.png" BorderColor="#999999" BackColor="#999999" Height="50px" runat="server" />
+        </div>
+             <section class="main">
+				<ul class="ch-grid">
+					<li>
+						<div class="ch-item ch-img-1">
+							<div class="ch-info">
+								<h3>Instant Access to candiate profile</h3>
+								<p>With QR Technology<a href="../hrae/hrlogreg.aspx">Go to Employer</a></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item ch-img-2">
+							<div class="ch-info">
+								<h3>Messed up carrying Documents?</h3>
+								<p>One time upload, share with ease<a href="../usae/userlogreg.aspx">sign In / Sign Up</a></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item ch-img-3">
+							<div class="ch-info">
+								<h3>One stop for your search</h3>
+								<p>System helps provide geniue Candiates<a href="../hrae/hrlogreg.aspx">Register with us</a></p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+
+
+    </div>  
+    <div class="clearfix">
+    <section class="footer">
+ <ul id="footermenu" style="text-decoration:none" >
+<li style="display:inline; border-right:2px solid grey">AHRMS  &nbsp; &nbsp; </li>&nbsp; &nbsp;
+<li style="display:inline; border-right:2px solid grey" >&copyCopyRights 2015  &nbsp; &nbsp; </li>&nbsp; &nbsp;
+<li style="display:inline ;text-decoration:none" >
+    <asp:HyperLink ID="HyperLink1" runat="server">Contact us</asp:HyperLink></li>
+       
+<li></li>
+     <br />
+</ul>
+    </section>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="userlogreg.master.cs" Inherits="AHRMS1.ms.userlogreg" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>AHRMS</title>
+    <link href="/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="/Scripts/_references.js"></script>
+  
+    
+   
+    <script src="/Scripts/jquery-1.9.1.js"></script>
+    <script src="/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="/Scripts/jquery-ui-1.8.20.js"></script>
+    <script src="/Scripts/jquery-ui-1.8.20.min.js"></script>
+    <script src="/Scripts/modernizr-2.5.3.js"></script>
+    <script src="/Scripts/npm.js"></script>
+   <script src="/Scripts/bootstrap.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+   <script src="/Scripts/advancetitleusr.js"></script>
+    
+
+    <link href="../Content/userlogreg.css" rel="stylesheet" />
+    <link href="../Content/footerstick.css" rel="stylesheet" />
+
+ <style>
+
+ </style>
+</head>
+<body style="background-image:url(../Images/BWHP-background.jpg);background-repeat:no-repeat;background-size:cover">
+    <div id="wrapperhem">
+     <div id="header">
+         <span style="position:fixed" class="hvr-buzz-out">
+            <input class="logosize" type="image" alt="AHRMS" src="../Images/logo.png"/></span>
+             <p id="headernote" style="text-align:center;color:white"> User &nbsp; &nbsp; Login/Register Page </p>
+             <a href="../otherpages/MainHome.aspx" id="linkpage">HOME</a>
+    </div>
+     <div id="sidebar" style="position:absolute; z-index:10; padding:0 0 0 0; outline-offset:0;  margin-top:15%">
+       <p class="aa" id="at">A</p>
+        <p class="aa" id="ht">H</p>
+        <p class="aa" id="rt">R</p>
+        <p class="aa" id="mt">M</p>
+        <p class="aa" id="st">S</p>
+       </div>
+
+      <div class="jumbotron1"  style="height:100%;background-color:none;" >
+                
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                    </asp:ContentPlaceHolder>
+                
+            </div>
+   
+
+<div id="footerid" style="background-color:black;bottom:0px;left:0px;right:0px;margin:0px;padding:0px">
+<ul id="footermenu" style="text-decoration:none" >
+<li style="display:inline; border-right:2px solid grey">AHRMS  &nbsp; &nbsp; </li>&nbsp; &nbsp;
+<li style="display:inline; border-right:2px solid grey" >&copyCopyRights 2015  &nbsp; &nbsp; </li>&nbsp; &nbsp;
+<li style="display:inline ;text-decoration:none" ><a href="">Contact Us</a></li>
+
+</ul>
+    <p  style="float:right; padding-right:30px; font-size:.75em">Developed By Hemanth </p> 
+        </div>
+        </div>
+</body>
+</html>
+

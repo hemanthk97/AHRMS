@@ -1,0 +1,247 @@
+﻿body {
+    font-family: Verdana, 'Agency FB';
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: purple;
+    width: 100%;
+    height: 70px;
+    color: #FF9933;
+    z-index: 10;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+.hompageheader {
+    position: relative;
+}
+
+.overlayvedio {
+    background-position: initial;
+    background-image: url('../Images/video-overlay.png');
+    background-size: 0.2em;
+    background-repeat: repeat-x initial;
+    background-repeat: repeat-y initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.headrer-gp {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    width: 100%;
+    margin-left: -50%;
+    height: 140px;
+    margin-top: -70px;
+    text-align: center;
+    text-shadow: 0 0 30px rgba(8,58,61, .2);
+}
+
+    .headrer-gp h1 {
+        font-size: 8em;
+    }
+
+    .headrer-gp h2 {
+        font-size: 3.5em;
+    }
+
+h1#wel:first-letter {
+    font-size: 1.2em;
+    color: purple;
+}
+
+h3 {
+    color: black;
+}
+
+    h3::first-letter {
+        font-size: 2em;
+        font-weight: bold;
+        color: purple;
+    }
+
+
+
+
+
+.aa {
+    background-color: black;
+    opacity: 0.8;
+    width: 25px;
+    height: 45px;
+    color: white;
+    font-size: x-large;
+    padding-top: 8px;
+    margin: 5px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+
+
+
+ul#menu {
+    font-size: 1.3em;
+    font-weight: 200;
+    margin: 0 0 5px;
+    padding: 2%;
+    margin-bottom: 15%;
+    text-align: right;
+}
+
+    ul#menu li {
+        display: inline;
+        list-style: none;
+        padding-left: 15px;
+    }
+
+        ul#menu li a {
+            background: none;
+            color: white;
+            text-decoration: none;
+        }
+
+            ul#menu li a:hover {
+                color: #FF9933;
+                text-decoration: none;
+            }
+
+h2::first-letter {
+    font-size: 1.5em;
+    color: Green;
+}
+
+p#abus::first-letter {
+    color: #FF9933;
+    font-size: 1.8em;
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    height: 10%;
+    color: white;
+}
+
+
+
+
+
+
+.logreg {
+    padding-right: 20px;
+    padding-left: 10px;
+    margin-left: 78%;
+    margin-right: 30px;
+    fit-position: left;
+    z-index: 10;
+}
+
+
+#footermenu {
+    text-decoration: none;
+    font-size: .75em;
+    text-align: center;
+    padding: 10px 0 0 0;
+    margin: 0 0 0 0;
+}
+
+
+
+
+.ProductBox {
+    margin-bottom: 50px;
+    padding: 0 0 20px;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 50px;
+}
+
+
+
+
+h3 {
+    word-wrap: break-word;
+}
+
+
+#what:first-letter {
+    font-size: 2em;
+    color: purple;
+}
+
+
+.hmenu {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: white;
+}
+
+    .hmenu:hover {
+        color: purple;
+        text-decoration: none;
+    }
+
+#why {
+    font-size: 2.5em;
+    color: orangered;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .wrapper {
+    padding-left:100%;
+    }
+
+    .headrer-gp h1 {
+        display: none;
+    }
+
+    .headrer-gp h2 {
+        display: none;
+    }
+
+    .hmenu {
+        font-size: 1em;
+        color: black;
+        padding-right: 4%;
+    }
+    #why {
+    padding-top:8%;
+        font-size:1.5em;
+    font-weight:300;
+    color:orangered;
+    text-align:center;
+    }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 800px) {
+    .hmenu {
+        font-size: 2em;
+        color: black;
+        padding-right: 4%;
+    }
+      #why {
+    padding-top:40px;
+        font-size:1.8em;
+    font-weight:500;
+    color:orangered;
+    text-align:center;
+    }
+
+}

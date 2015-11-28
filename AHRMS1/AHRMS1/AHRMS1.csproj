@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BABD9EFC-AEAF-434B-8722-C6C50B446CB4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AHRMS1</RootNamespace>
+    <AssemblyName>AHRMS1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=15.1.1.100, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Public\Documents\ASP.NET AJAX Control Toolkit v15.1\SampleSite\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode">
+      <HintPath>..\..\..\..\..\Downloads\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="hrae\1434630013_Error.png" />
+    <Content Include="hrae\1434648033_calendar.png" />
+    <Content Include="hrae\bootstrap.min.css" />
+    <Content Include="hrae\Hr.css" />
+    <Content Include="hrae\main.css" />
+    <Content Include="hrae\qr_code-128.png" />
+    <Content Include="hrae\star-rating.css" />
+    <Content Include="hrae\star-rating.js" />
+    <Content Include="Images\006.gif" />
+    <Content Include="Images\014.gif" />
+    <Content Include="Images\1435671295_icon-23-star.png" />
+    <Content Include="Images\1435671306_icon-23-star.png" />
+    <Content Include="Images\1435946334_arrow_right_green_48.png" />
+    <Content Include="Images\1435946368_circle_green.png" />
+    <Content Include="Images\1435947044_data_recovery.png" />
+    <Content Include="Images\ajax-loader.gif" />
+    <Content Include="Images\ajax_loader_blue_32.gif" />
+    <Content Include="Images\b01.jpg" />
+    <Content Include="Images\blurred-background-4.jpg" />
+    <Content Include="Images\BWHP-background.jpg" />
+    <Content Include="Images\checklist-128.png" />
+    <Content Include="Images\checkuser.gif" />
+    <Content Include="Images\per.gif" />
+    <Content Include="Images\Skype balls loader.gif" />
+    <Content Include="Images\word-best-office-invironment.jpg" />
+    <Content Include="ms\access.aspx" />
+    <Content Include="otherpages\Admin.aspx" />
+    <Content Include="otherpages\ChangePassword.aspx" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\component.css" />
+    <Content Include="Content\default.css" />
+    <Content Include="Content\fontssss.css" />
+    <Content Include="Content\footerstick.css" />
+    <Content Include="Content\logout.css" />
+    <Content Include="Content\Mainformcss.css" />
+    <Content Include="Content\responsedesgin.css" />
+    <Content Include="Content\specuspag.css" />
+    <Content Include="Content\style1111.css" />
+    <Content Include="Content\userlogreg.css" />
+    <Content Include="error.aspx" />
+    <Content Include="fonts\1427987301_icon-ios7-arrow-right-32.png" />
+    <Content Include="hrae\bootrating.js" />
+    <Content Include="hrae\bootstrap-datepicker.css" />
+    <Content Include="hrae\bootstrap-datepicker.js" />
+    <Content Include="hrae\bootstrap-datepicker.min.css" />
+    <Content Include="hrae\bootstrap-datepicker.min.js" />
+    <Content Include="hrae\bootstrap-datepicker3.standalone.css" />
+    <Content Include="hrae\bootstrap-datepicker3.standalone.min.css" />
+    <Content Include="hrae\js\html-qrcode.js" />
+    <Content Include="hrae\js\jquery.min.js" />
+    <Content Include="hrae\js\jquery.webcamqrcode.js" />
+    <Content Include="hrae\js\jquery.webcamqrcode.min.js" />
+    <Content Include="hrae\js\qrcode.js" />
+    <Content Include="hrae\swf\webcamqrcode.swf" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="Images\1428055610_icon-arrow-down-b-64.png" />
+    <Content Include="Images\1428072327_down.png" />
+    <Content Include="Images\1429032217_circle-check-24.png" />
+    <Content Include="Images\1429032260_circle-close-24.png" />
+    <Content Include="Images\1429032269_refresh-24.png" />
+    <Content Include="Images\video-overlay.png" />
+    <Content Include="jquery-2.0.3.js" />
+    <Content Include="jqueryqrcode.js" />
+    <Content Include="hrae\spechrownpag.aspx" />
+    <Content Include="hrae\hrcanddoc.aspx" />
+    <Content Include="hrae\addexp.aspx" />
+    <Content Include="hrae\spechrverdelpag.aspx" />
+    <Content Include="NewFolder1\common.css" />
+    <Content Include="NewFolder1\demo.css" />
+    <Content Include="NewFolder1\images\1.jpg" />
+    <Content Include="NewFolder1\images\10.jpg" />
+    <Content Include="NewFolder1\images\11.jpg" />
+    <Content Include="NewFolder1\images\12.jpg" />
+    <Content Include="NewFolder1\images\123.jpg" />
+    <Content Include="NewFolder1\images\1234.jpg" />
+    <Content Include="NewFolder1\images\13.jpg" />
+    <Content Include="NewFolder1\images\14.jpg" />
+    <Content Include="NewFolder1\images\15.jpg" />
+    <Content Include="NewFolder1\images\16.jpg" />
+    <Content Include="NewFolder1\images\17.jpg" />
+    <Content Include="NewFolder1\images\18.jpg" />
+    <Content Include="NewFolder1\images\19.jpg" />
+    <Content Include="NewFolder1\images\19.png" />
+    <Content Include="NewFolder1\images\2.jpg" />
+    <Content Include="NewFolder1\images\20.jpg" />
+    <Content Include="NewFolder1\images\21.jpg" />
+    <Content Include="NewFolder1\images\22.jpg" />
+    <Content Include="NewFolder1\images\3.jpg" />
+    <Content Include="NewFolder1\images\33.jpg" />
+    <Content Include="NewFolder1\images\4.jpg" />
+    <Content Include="NewFolder1\images\44.jpg" />
+    <Content Include="NewFolder1\images\45.jpg" />
+    <Content Include="NewFolder1\images\5.jpg" />
+    <Content Include="NewFolder1\images\55.jpg" />
+    <Content Include="NewFolder1\images\6.jpg" />
+    <Content Include="NewFolder1\images\66.jpg" />
+    <Content Include="NewFolder1\images\7.jpg" />
+    <Content Include="NewFolder1\images\8.jpg" />
+    <Content Include="NewFolder1\images\9.jpg" />
+    <Content Include="NewFolder1\images\bg.jpg" />
+    <Content Include="NewFolder1\images\d.png" />
+    <Content Include="NewFolder1\images\noise.png" />
+    <Content Include="NewFolder1\images\t.jpg" />
+    <Content Include="NewFolder1\modernizr.custom.79639.js" />
+    <Content Include="NewFolder1\style123.css" />
+    <Content Include="otherpages\empChangePassword.aspx" />
+    <Content Include="Scripts\bpopup.js" />
+    <Content Include="Scripts\jquery.lightbox_me.js" />
+    <Content Include="Scripts\jquery2.1.js" />
+    <Content Include="Scripts\jquery555.js" />
+    <Content Include="Scripts\modernizr.custom1.js" />
+    <Content Include="Scripts\pwdstr.js" />
+    <Content Include="usae\blank.gif" />
+    <Content Include="usae\edituploaddoc.aspx" />
+    <Content Include="fonts\1427980039_delete-32.png" />
+    <Content Include="fonts\1427980067_upload-32.png" />
+    <Content Include="fonts\1427980107_download-32.png" />
+    <Content Include="fonts\1427980160_eye-32.png" />
+    <Content Include="usae\editeducationdetails.aspx" />
+    <Content Include="usae\editpersonaldetailspage.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\1427390703_responsive-web.png" />
+    <Content Include="Images\1427391182_Forrst_Social-Network-Communicate-Page-Curl-Effect-Circle-Glossy-Shadow-Shine.png" />
+    <Content Include="Images\1427391265_qr_code.png" />
+    <Content Include="Images\1427395907_Search-Male-User.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\alien_strukture-wide.jpg" />
+    <Content Include="Images\Black-Texture-Background.png" />
+    <Content Include="Images\Green-AMD-Wallpaper-HD.jpg" />
+    <Content Include="Images\Mainimage.png" />
+    <Content Include="Images\QR Code in a DoubleClick Rich Media Ad.mp4" />
+    <Content Include="hrae\hrlogreg.aspx" />
+    <Content Include="Images\tlrk_home230720141733.mp4" />
+    <Content Include="Images\tlrk_home230720141733.webm" />
+    <Content Include="Images\WhatisaQRCode.mp4" />
+    <Content Include="marcbuils-jquery.webcamqrcode-3fd7723\WebForm2.aspx" />
+    <Content Include="otherpages\MainHome.aspx" />
+    <Content Include="marcbuils-jquery.webcamqrcode-3fd7723\index.html" />
+    <Content Include="marcbuils-jquery.webcamqrcode-3fd7723\js\html-qrcode.js" />
+    <Content Include="marcbuils-jquery.webcamqrcode-3fd7723\js\jquery.min.js" />
+    <Content Include="marcbuils-jquery.webcamqrcode-3fd7723\js\jquery.webcamqrcode.js" />
+    <Content Include="marcbuils-jquery.webcamqrcode-3fd7723\js\jquery.webcamqrcode.min.js" />
+    <Content Include="marcbuils-jquery.webcamqrcode-3fd7723\js\qrcode.js" />
+    <Content Include="marcbuils-jquery.webcamqrcode-3fd7723\swf\webcamqrcode.swf" />
+    <Content Include="Scripts\advancetitleusr.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\logout.js" />
+    <Content Include="Scripts\main1111.js" />
+    <Content Include="usae\fancybox_loading%402x.gif" />
+    <Content Include="usae\fancybox_loading.gif" />
+    <Content Include="usae\fancybox_overlay.png" />
+    <Content Include="usae\fancybox_sprite%402x.png" />
+    <Content Include="usae\fancybox_sprite.png" />
+    <Content Include="usae\jquery.fancybox.css" />
+    <Content Include="usae\jquery.fancybox.js" />
+    <Content Include="usae\smoke.css" />
+    <Content Include="usae\smoke.js" />
+    <Content Include="usae\smoke.min.js" />
+    <Content Include="usae\specpersonusr.aspx" />
+    <Content Include="usae\specueopag.aspx" />
+    <Content Include="usae\specupload.aspx" />
+    <Content Include="usae\specusredu.aspx" />
+    <Content Include="usae\userlogreg.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Scripts\advancetitle.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="ms\userlogreg.master" />
+    <Content Include="ms\hrlogreg.Master" />
+    <Content Include="ms\specusrmas.Master" />
+    <Content Include="marcbuils-jquery.webcamqrcode-3fd7723\build\compil.sh" />
+    <Content Include="marcbuils-jquery.webcamqrcode-3fd7723\Readme.md" />
+    <Content Include="marcbuils-jquery.webcamqrcode-3fd7723\src\com\logosware\event\QRdecoderEvent.as" />
+    <Content Include="marcbuils-jquery.webcamqrcode-3fd7723\src\com\logosware\event\QRreaderEvent.as" />
+    <Content Include="marcbuils-jquery.webcamqrcode-3fd7723\src\com\logosware\utils\LabelingClass.as" />
+    <Content Include="marcbuils-jquery.webcamqrcode-3fd7723\src\com\logosware\utils\QRcode\G4Num.as" />
+    <Content Include="marcbuils-jquery.webcamqrcode-3fd7723\src\com\logosware\utils\QRcode\G8Num.as" />
+    <Content Include="marcbuils-jquery.webcamqrcode-3fd7723\src\com\logosware\utils\QRcode\GetQRimage.as" />
+    <Content Include="marcbuils-jquery.webcamqrcode-3fd7723\src\com\logosware\utils\QRcode\GFstatic.as" />
+    <Content Include="marcbuils-jquery.webcamqrcode-3fd7723\src\com\logosware\utils\QRcode\QRCodeDetecter.as" />
+    <Content Include="marcbuils-jquery.webcamqrcode-3fd7723\src\com\logosware\utils\QRcode\QRdecode.as" />
+    <Content Include="marcbuils-jquery.webcamqrcode-3fd7723\src\fr\marcbuils\WebcamQRCode\WebcamQRCode.as" />
+    <Content Include="NewFolder1\images\Thumbs.db" />
+    <Content Include="ms\spehrpag.Master" />
+    <Content Include="hrae\build\compil.sh" />
+    <Content Include="hrae\src\com\logosware\event\QRdecoderEvent.as" />
+    <Content Include="hrae\src\com\logosware\event\QRreaderEvent.as" />
+    <Content Include="hrae\src\com\logosware\utils\LabelingClass.as" />
+    <Content Include="hrae\src\com\logosware\utils\QRcode\G4Num.as" />
+    <Content Include="hrae\src\com\logosware\utils\QRcode\G8Num.as" />
+    <Content Include="hrae\src\com\logosware\utils\QRcode\GetQRimage.as" />
+    <Content Include="hrae\src\com\logosware\utils\QRcode\GFstatic.as" />
+    <Content Include="hrae\src\com\logosware\utils\QRcode\QRCodeDetecter.as" />
+    <Content Include="hrae\src\com\logosware\utils\QRcode\QRdecode.as" />
+    <Content Include="hrae\src\fr\marcbuils\WebcamQRCode\WebcamQRCode.as" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\npm.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ms\access.aspx.cs">
+      <DependentUpon>access.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ms\access.aspx.designer.cs">
+      <DependentUpon>access.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="otherpages\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="otherpages\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="otherpages\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="otherpages\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="error.aspx.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="error.aspx.designer.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ms\spehrpag.Master.cs">
+      <DependentUpon>spehrpag.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ms\spehrpag.Master.designer.cs">
+      <DependentUpon>spehrpag.Master</DependentUpon>
+    </Compile>
+    <Compile Include="hrae\spechrownpag.aspx.cs">
+      <DependentUpon>spechrownpag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hrae\spechrownpag.aspx.designer.cs">
+      <DependentUpon>spechrownpag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hrae\hrcanddoc.aspx.cs">
+      <DependentUpon>hrcanddoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hrae\hrcanddoc.aspx.designer.cs">
+      <DependentUpon>hrcanddoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hrae\addexp.aspx.cs">
+      <DependentUpon>addexp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hrae\addexp.aspx.designer.cs">
+      <DependentUpon>addexp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hrae\spechrverdelpag.aspx.cs">
+      <DependentUpon>spechrverdelpag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hrae\spechrverdelpag.aspx.designer.cs">
+      <DependentUpon>spechrverdelpag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="otherpages\empChangePassword.aspx.cs">
+      <DependentUpon>empChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="otherpages\empChangePassword.aspx.designer.cs">
+      <DependentUpon>empChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usae\edituploaddoc.aspx.cs">
+      <DependentUpon>edituploaddoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usae\edituploaddoc.aspx.designer.cs">
+      <DependentUpon>edituploaddoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usae\editeducationdetails.aspx.cs">
+      <DependentUpon>editeducationdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usae\editeducationdetails.aspx.designer.cs">
+      <DependentUpon>editeducationdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usae\editpersonaldetailspage.aspx.cs">
+      <DependentUpon>editpersonaldetailspage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usae\editpersonaldetailspage.aspx.designer.cs">
+      <DependentUpon>editpersonaldetailspage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ms\hrlogreg.Master.cs">
+      <DependentUpon>hrlogreg.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ms\hrlogreg.Master.designer.cs">
+      <DependentUpon>hrlogreg.Master</DependentUpon>
+    </Compile>
+    <Compile Include="marcbuils-jquery.webcamqrcode-3fd7723\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="marcbuils-jquery.webcamqrcode-3fd7723\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ms\specusrmas.Master.cs">
+      <DependentUpon>specusrmas.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ms\specusrmas.Master.designer.cs">
+      <DependentUpon>specusrmas.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ms\userlogreg.master.cs">
+      <DependentUpon>userlogreg.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ms\userlogreg.master.designer.cs">
+      <DependentUpon>userlogreg.master</DependentUpon>
+    </Compile>
+    <Compile Include="hrae\hrlogreg.aspx.cs">
+      <DependentUpon>hrlogreg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hrae\hrlogreg.aspx.designer.cs">
+      <DependentUpon>hrlogreg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="otherpages\MainHome.aspx.cs">
+      <DependentUpon>MainHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="otherpages\MainHome.aspx.designer.cs">
+      <DependentUpon>MainHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usae\specpersonusr.aspx.cs">
+      <DependentUpon>specpersonusr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usae\specpersonusr.aspx.designer.cs">
+      <DependentUpon>specpersonusr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usae\specueopag.aspx.cs">
+      <DependentUpon>specueopag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usae\specueopag.aspx.designer.cs">
+      <DependentUpon>specueopag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usae\specupload.aspx.cs">
+      <DependentUpon>specupload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usae\specupload.aspx.designer.cs">
+      <DependentUpon>specupload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usae\specusredu.aspx.cs">
+      <DependentUpon>specusredu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usae\specusredu.aspx.designer.cs">
+      <DependentUpon>specusredu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usae\userlogreg.aspx.cs">
+      <DependentUpon>userlogreg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usae\userlogreg.aspx.designer.cs">
+      <DependentUpon>userlogreg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ms\HomeMainMaster.Master.cs">
+      <DependentUpon>HomeMainMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ms\HomeMainMaster.Master.designer.cs">
+      <DependentUpon>HomeMainMaster.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ms\HomeMainMaster.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="QRImages\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>61438</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61438/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:61438/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

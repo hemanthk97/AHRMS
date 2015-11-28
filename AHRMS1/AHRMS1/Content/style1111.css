@@ -1,0 +1,77 @@
+
+body {
+  background: #555a66;
+  font-family: Arial, sans-serif;
+}
+
+.trigger-button {
+  background: #d73c52;
+  text-align: center;
+  margin: 0 auto;
+  width: 50px;
+  border-radius: 5px;
+  padding: 20px 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 200px;
+  box-shadow: 1px 1px 2px #2d2d2d;
+}
+
+.trigger-button:hover {
+  background: #ed425a;
+  cursor: pointer;
+}
+
+.trigger-button:active { background: #e43f57; }
+
+.lightbox {
+  display: none;
+  margin: 0 auto;
+  background: #ffffff;
+  width: 500px;
+  padding: 0 20px 30px 20px;
+  border: 6px solid #222429;
+  border-radius: 5px;
+  margin-top: 150px;
+}
+
+.lightbox h1 {
+  text-align: center;
+  background: #ed425a;
+  width: auto;
+  padding: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.lightbox p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.close-button {
+  display: none;
+  text-align: center;
+  margin: 0 auto;
+  width: 10px;
+  border-radius: 50%;
+  padding: 5px 10px 5px 10px;
+  color: #d73c52;
+  text-transform: uppercase;
+  margin-top: 70px;
+  border: 1px solid #d73c52;
+}
+
+.close-button:hover {
+  background: #ed425a;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.close-button:active { background: #e43f57; }
+
+/* Responsive */
+@media only screen and (max-width: 40em) {
+
+.lightbox { width: 80%; }
+}

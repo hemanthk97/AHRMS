@@ -1,0 +1,181 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="specusrmas.master.cs" Inherits="AHRMS1.ms.specusrmas" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>AHRMS</title>
+
+
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="/Content/bootstrap-theme.min.css" rel="stylesheet" />
+      <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'/>
+     <link href="../Content/fontssss.css" rel="stylesheet" />
+    <link href="../Content/specuspag.css" rel="stylesheet" />
+    <link href="../Content/logout.css" rel="stylesheet" />
+    <link href="../Content/footerstick.css" rel="stylesheet" />
+     <link href='http://fonts.googleapis.com/css?family=Marvel' rel='stylesheet' type='text/css'/>
+    
+    <script src="/Scripts/_references.js"></script>
+    <script src="/Scripts/jquery-1.9.1.js"></script>
+    <script src="/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="/Scripts/jquery-ui-1.8.20.js"></script>
+    <script src="/Scripts/jquery-ui-1.8.20.min.js"></script>
+    <script src="/Scripts/modernizr-2.5.3.js"></script>
+    <script src="/Scripts/npm.js"></script>
+    <script src="/Scripts/bootstrap.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+
+
+    <script src="/Scripts/advancetitleusr.js"></script>
+    <script src="/Scripts/logout.js"></script>
+
+   <link href="../hrae/bootstrap-datepicker.css" rel="stylesheet" />
+    <script src="../hrae/bootstrap-datepicker.js"></script>
+
+    <link href="../usae/smoke.css" rel="stylesheet" />
+    <script src="../usae/smoke.js"></script>
+    <script src="../usae/smoke.min.js"></script>
+
+
+          <style type="text/css">
+            .zui-table {
+                border: solid 1px #DDEEEE;
+                border-collapse: collapse;
+                border-spacing: 0;
+                font: normal 13px 'Roboto Slab', sans-serif;
+            }
+
+                .zui-table thead th {
+                    background-color: #DDEFEF;
+                    border: solid 1px #DDEEEE;
+                    color: #336B6B;
+                    padding: 10px;
+                    text-align: left;
+                    text-shadow: 1px 1px 1px #fff;
+                }
+
+                .zui-table tbody td {
+                    border: solid 1px #DDEEEE;
+                    color: #333;
+                    padding: 10px;
+                    text-shadow: 1px 1px 1px #fff;
+                }
+
+            .zui-table-highlight tbody tr:hover {
+                background-color: #CCE7E7;
+            }
+
+            .zui-table-horizontal tbody td {
+                border-left: none;
+                border-right: none;
+            }
+        </style>
+
+</head>
+<body>
+        <style type="text/css">
+        #logoutlink1:hover {
+        cursor:pointer;
+        }
+    </style>
+    <script>
+        function Confirmbox1() {
+
+            smoke.confirm("Are you sure want to logout", function (e) {
+                if (e) {
+
+                    document.location.href = "http://localhost:61438/otherpages/MainHome.aspx";
+
+                } else {
+                    smoke.alert('Cancelled log out');
+                }
+            }, {
+                ok: "Yes",
+                cancel: "No",
+                classname: "custom-class",
+                reverseButtons: true
+                
+            });
+            return true;
+        }
+    </script>
+    <div id="wrapperhem" ">
+    <div id="header" >
+        <ul style="display:inline; text-decoration:none;">
+            <li class="hvr-buzz-out" style="display:inline">
+                <asp:HyperLink ID="HyperLink5" ImageUrl="~/Images/logo.png" ImageHeight="63px"  NavigateUrl="~/usae/specueopag.aspx" runat="server"></asp:HyperLink></li>
+             <li style="display:inline;padding-left:65%;">
+            <asp:Label ID="specloggedname" runat="server" Text="lab"></asp:Label>
+        </li>
+       
+            <li style="display:inline; float:right; padding-right:30px; padding-bottom:150px;">
+                 <div class="wrapper">
+    
+    <div class="menu">
+      <div class="table">
+        
+        <ul class="menu__list hidden">
+          <li class="menu__list__item item1"><asp:HyperLink ID="homelink" ForeColor="Purple" NavigateUrl="~/usae/specueopag.aspx" runat="server">Home</asp:HyperLink></li>  
+          <li class="menu__list__item item2"><asp:HyperLink ID="cplink"  ForeColor="Green"  runat="server">Change Password</asp:HyperLink></li>
+          <li class="menu__list__item item3"><a id="logoutlink1"  onclick="javascript:Confirmbox1();" runat="server">Log_out</a></li>
+        </ul>
+      
+      </div>
+    </div>
+    <div class="button">
+      <div class="line line__first"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+         </li> 
+            </ul>
+    </div>
+     <div id="pointer" style="position:absolute; z-index:10; padding:0 0 0 0; outline-offset:0; margin-top:25%">
+       <p class="aa" id="at">A</p>
+        <p class="aa" id="ht">H</p>
+        <p class="aa" id="rt">R</p>
+        <p class="aa" id="mt">M</p>
+        <p class="aa" id="st">S</p>
+       </div>
+        
+     
+        <br />
+
+    <div class="jumbotron" style="width: 100%;background:none">
+           <div class="wrapper" style="display:inline;background:none ">
+        <div class="navbar hyper" id="dddd"  style="padding-top:20px ;background-color:white; border-bottom:4px solid black">
+       <ul style="display:inline ; ">
+      <li>
+     <asp:HyperLink ID="HyperLink1" Font-Size="Medium" Font-Underline="false" NavigateUrl="~/usae/specueopag.aspx" CssClass="hyper" Text="Home" ForeColor="Purple" runat="server"></asp:HyperLink></li>
+    <li><asp:HyperLink ID="HyperLink2" Font-Underline="false" Font-Size="Medium" NavigateUrl="~/usae/specpersonusr.aspx" CssClass="hyper" Text="Personal" ForeColor="Green" runat="server"></asp:HyperLink></li>
+    <li><asp:HyperLink ID="HyperLink3" Font-Underline="false" Font-Size="Medium" NavigateUrl="~/usae/specusredu.aspx" CssClass="hyper" Text="Education" ForeColor="Brown" runat="server"></asp:HyperLink></li>
+    <li><asp:HyperLink ID="HyperLink6" Font-Underline="false" Font-Size="Medium" NavigateUrl="~/usae/specupload.aspx" CssClass="hyper" Text="Upload Documents" ForeColor="blue" runat="server"></asp:HyperLink></li>
+           <li> <asp:HyperLink ID="HyperLink4" Font-Underline="false" Font-Size="Medium" NavigateUrl="~/marcbuils-jquery.webcamqrcode-3fd7723/WebForm2.aspx" CssClass="hyper" Text="View Profile" ForeColor="red" runat="server"></asp:HyperLink></li>
+    
+  </ul>
+</div>
+               <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+               </asp:ContentPlaceHolder>
+               </div>
+        </div>
+
+       <br />
+        <br />
+    <div id="footerid">
+        <ul id="footermenu">
+            <li style="display: inline">AHRMS   |</li>
+            <li style="display: inline">&copy CopyRights 2015   |</li>
+            <li style="display: inline"><a href="">Contact Us</a></li>
+
+        </ul>
+        <p style="padding-left: 87%; font-size: .75em">Developed By Hemanth </p>
+    </div>
+         </div>
+</body>
+</html>
+
+
